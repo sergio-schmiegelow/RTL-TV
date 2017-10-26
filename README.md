@@ -48,5 +48,5 @@ python rtl_rx.py
 ```
 mkfifo <pipe file>
 <run gnuradio script reading IQ samples from pipe file>
-python tx.py|<pipe_file>
+python tx.py >> <pipe_file>
 ```
