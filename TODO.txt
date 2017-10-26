@@ -1,0 +1,6 @@
+Implement command line parameters for:
+    -Sample rate
+    -Modulation frequency
+    -RTL-SDR frequency and sample rate
+    -Image resolution
+    -Visualization resolution
