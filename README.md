@@ -9,11 +9,14 @@ There is a special version of the receiver for RTL-SDR dongles.
 The video encoding format is proprietary as follow:
  * Each frame contains a full image (there is no line sync)
  * The frame format is:
-   * A sync sequence (24 bit “gold” code, to be easily detected by cross correlation);
-   * A maximum pixel value level reference;
-   * A minimum pixel value level reference;
+   * Header:
+     * A sync sequence (24 bit “gold” code, to be easily detected by cross correlation);
+     * A maximum pixel value level reference;
+     * A minimum pixel value level reference.
    * The image pixel values serialized.
-   * The frames are upsampled and modulated in AM
+
+The frames are upsampled and modulated in AM.
+
 The frequencies and sample rates are currently hard coded.
 
 ## Files description
