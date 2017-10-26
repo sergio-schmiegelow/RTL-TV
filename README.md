@@ -15,6 +15,8 @@ The video encoding format is proprietary as follow:
      * A minimum pixel value level reference.
    * The image pixel values serialized.
 
+![alt text](https://raw.githubusercontent.com/sergio-schmiegelow/RTL-TV/master/frame_diagram.png "Encoding diagram")
+
 The frames are upsampled and modulated in AM.
 
 The frequencies and sample rates are currently hard coded.
