@@ -2,17 +2,15 @@
 import cv2
 import radio_video
 import numpy as np
+import sys
 
 #-----------------------------------------------------------
 rv = radio_video.radioVideo()
-sdr = RtlSdr()
 
-#create openCV window and gain slider
+#create openCV window
 cv2.namedWindow('Video')
-cv2.createTrackbar('Ganho','Video',10,40,gainChange)
 
-samplesToRead = firstPot2Bigger(rv.SAMPLES_PER_FRAME)
-bytesToRead = samplesToRead * np.dtype('complex64').itemsize
+bytesToRead = rv.SAMPLES_PER_FRAME * np.dtype('complex64').itemsize
 pause = False
 while True:
     dataBytes = sys.stdin.read(bytesToRead)
