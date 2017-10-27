@@ -5,6 +5,8 @@ The purpose of this project is create a simple TV transmitter and receiver using
 
 There is a special version of the receiver for RTL-SDR dongles.
 
+It was tested only in Linux.
+
 ## Encoding format
 The video encoding format is proprietary as follow:
  * Each frame contains a full image (there is no line sync)
